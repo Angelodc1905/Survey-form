@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<link rel="stylesheet" href="sample.css">
+	<link rel="stylesheet"  href="https://fonts.google.com/specimen/Roboto+Condensed">
+
+<body>
+	<img src="uc.png" class="image">
+<div class="container">
+
+  <header class="header">
+
+    <h1 id="title" class="text-center"><strong>Online Distance Learning Survey for students</strong></h1>
+    <p id="description" class="description text-center">
+      This survey is given to the University of The Cordilleras Students
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which college do you belong?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student"><p>CTE</p></option>
+        <option value="job"><p>CITCS</p></option>
+        <option value="learner"><p>COA</p></option>
+        <option value="preferNo"><p>COL</p></option>
+        <option value="other"><p>CHTM</p></option>
+        <option value="other"><p>Other</p></option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you agree on using ODL?</p>
+      <label><input
+          name="user-recommend" value="yes" type="radio" class="input-rec" checked
+        />Yes</label>
+      <label><input
+          name="user-recommend" value="no" type="radio" class="input-rec"
+        />No</label>
+
+      
+    </div>
+
+
+    <div class="form-group">
+      <p>
+        What gadget/s are you using to submit all your requirements:
+        <span class="ans">(Check all that apply)</span>
+      </p>
+
+      <label><input
+          name="prefer" value="pc" type="checkbox" class="input-checkbox"
+        />PC</label>
+      <label><input
+          name="prefer" value="laptop" type="checkbox" class="input-checkbox"
+        />Laptop</label>
+      <label><input
+          name="prefer" value="tablet" type="checkbox" class="input-checkbox"
+          />Tablet</label>
+      <label><input
+          name="prefer" value="mobile" type="checkbox" class="input-checkbox"
+        />Mobile</label>
+      <label><input
+          name="prefer" value="none" type="checkbox" class="input-checkbox"
+        />None</label>
+      
+      
+    </div>
+
+    <div class="form-group">
+      <p>Comments or suggestions:</p>
+      <textarea
+        id="comments" class="input-textarea" name="comment" placeholder="Enter your thoughts here:"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
